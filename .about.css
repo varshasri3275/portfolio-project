@@ -1,0 +1,26 @@
+/* About Section */
+.about {
+  background-color: #fff; /* White background */
+  padding: 40px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 40px;
+}
+
+.about h2 {
+  font-size: 2rem; /* Larger heading */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.about img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
