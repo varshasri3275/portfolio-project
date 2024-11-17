@@ -3,42 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Premium Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
     <nav>
+      <div class="logo">[Varsha Sri]</div>
       <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h1>About Me</h1>
-    <p>This is a brief introduction about myself.</p>
-  </section>
-
-  <section id="projects">
-    <h1>Projects</h1>
-    <div class="project-card">
-      <img src="img/project1.jpg" alt="Project 1">
-      <h2>Project 1</h2>
-      <p>Description of the project.</p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Creative World</h1>
+      <p>Building the future, one design at a time.</p>
+      <a href="#projects" class="btn">See My Work</a>
     </div>
-    <!-- Add more project cards as needed -->
   </section>
 
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="img/profile.jpg" alt="Your Name" class="profile-img">
+        <p>I'm a visionary web designer and developer with a passion for creating visually stunning, user-centered digital experiences. I thrive in crafting interfaces that seamlessly blend functionality with beauty.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">UI/UX Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="img/project1.jpg" alt="Project 1">
+          <div class="project-overlay">
+            <h3>Project One</h3>
+            <p>Interactive website with cutting-edge design and functionality.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="img/project2.jpg" alt="Project 2">
+          <div class="project-overlay">
+            <h3>Project Two</h3>
+            <p>A sleek eCommerce platform for a modern shopping experience.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact">
-    <h1>Contact</h1>
-    <form action="#">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Send</button>
-    </form>
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <script src="js/main.js"></script>

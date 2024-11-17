@@ -1,10 +1,10 @@
-// Smooth scroll to sections
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Smooth Scroll on Navigation Links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-  
       document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
+        block: 'start'
       });
     });
   });
